@@ -44,7 +44,7 @@ jobs:
         with:
           arguments: assemble
       - name: Store artifact
-        uses: actions/upload-artifact@releases/v2
+        uses: actions/upload-artifact@v2
         with:
           name: gradle-docker-plugin.jar
           path: build/libs/*.jar
