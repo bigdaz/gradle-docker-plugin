@@ -13,19 +13,19 @@ jobs:
         with:
           java-version: 11
       - name: Compilation
-        uses: gradle/gradle-build-action@v2.2.0-rc.1
+        uses: gradle/gradle-build-action@dd/220-rc2
         with:
           arguments: classes
       - name: Unit tests
-        uses: gradle/gradle-build-action@v2.2.0-rc.1
+        uses: gradle/gradle-build-action@dd/220-rc2
         with:
           arguments: test
       - name: Integration tests
-        uses: gradle/gradle-build-action@v2.2.0-rc.1
+        uses: gradle/gradle-build-action@dd/220-rc2
         with:
           arguments: integrationTest
       - name: Assemble artifact
-        uses: gradle/gradle-build-action@v2.2.0-rc.1
+        uses: gradle/gradle-build-action@dd/220-rc2
         with:
           arguments: assemble
       - name: Store artifact
